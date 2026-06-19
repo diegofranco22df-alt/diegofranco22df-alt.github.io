@@ -1,378 +1,112 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Diego Franco | Analista de Datos</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
-  <style>
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+Diego Franco
+Sobre mí
+Habilidades
+Proyectos
+Contacto
+Disponible para nuevas oportunidades
+Hola, soy
+Diego Franco 👋
+Analista de Datos · Contador Público
 
-    :root {
-      --bg: #ffffff;
-      --bg2: #f7f7f5;
-      --text: #1a1a1a;
-      --muted: #6b6b6b;
-      --border: rgba(0,0,0,0.1);
-      --accent: #534AB7;
-      --accent-bg: #EEEDFE;
-      --accent-text: #3C3489;
-    }
+Transformo datos complejos en información clara y accionable. Apasionado por el análisis, la visualización y la automatización de procesos mediante SQL, Python, Excel y Power BI.
 
-    body {
-      font-family: 'Inter', system-ui, sans-serif;
-      background: var(--bg2);
-      color: var(--text);
-      line-height: 1.6;
-    }
+Ver proyectos
+LinkedIn →
+DF
+🎓 Cert. TripleTen
+4+
+Herramientas dominadas
+4+
+Proyectos completados
+2
+Años de experiencia en datos
+Sobre mí
+¿Quién soy?
+📊
+Análisis de datos
+Me especializo en limpiar, transformar y analizar datos para descubrir patrones y oportunidades de mejora en los procesos de negocio.
 
-    /* NAV */
-    nav {
-      position: sticky; top: 0; z-index: 100;
-      background: rgba(255,255,255,0.92);
-      backdrop-filter: blur(10px);
-      border-bottom: 0.5px solid var(--border);
-      padding: 14px 0;
-    }
-    .nav-inner {
-      max-width: 860px; margin: 0 auto; padding: 0 24px;
-      display: flex; justify-content: space-between; align-items: center;
-    }
-    .nav-logo { font-weight: 600; font-size: 15px; text-decoration: none; color: var(--text); }
-    .nav-links { display: flex; gap: 24px; list-style: none; }
-    .nav-links a { font-size: 14px; color: var(--muted); text-decoration: none; transition: color 0.2s; }
-    .nav-links a:hover { color: var(--text); }
+🧮
+Contador Público
+Mi base contable me permite entender los datos desde una perspectiva financiera y de negocio, conectando los números con decisiones estratégicas.
 
-    /* LAYOUT */
-    .container { max-width: 860px; margin: 0 auto; padding: 0 24px; }
+📈
+Visualización
+Creo dashboards e informes en Power BI que comunican insights de forma clara, permitiendo a los equipos tomar decisiones basadas en datos.
 
-    /* HERO */
-    .hero {
-      background: var(--bg);
-      border-bottom: 0.5px solid var(--border);
-      padding: 64px 0 52px;
-    }
-    .hero-inner {
-      max-width: 860px; margin: 0 auto; padding: 0 24px;
-      display: flex; justify-content: space-between; align-items: flex-start; gap: 32px;
-    }
-    .badge {
-      display: inline-block; font-size: 11px; font-weight: 500;
-      letter-spacing: 0.07em; text-transform: uppercase;
-      background: var(--accent-bg); color: var(--accent-text);
-      padding: 4px 12px; border-radius: 20px; margin-bottom: 18px;
-    }
-    .hero h1 { font-size: 32px; font-weight: 600; line-height: 1.2; margin-bottom: 12px; }
-    .hero h1 span { color: var(--accent); }
-    .hero p { font-size: 15px; color: var(--muted); max-width: 440px; margin-bottom: 28px; line-height: 1.7; }
-    .hero-btns { display: flex; gap: 12px; flex-wrap: wrap; }
-    .btn {
-      font-size: 14px; font-weight: 500; padding: 9px 20px;
-      border-radius: 8px; cursor: pointer; text-decoration: none;
-      transition: opacity 0.2s;
-    }
-    .btn:hover { opacity: 0.82; }
-    .btn-dark { background: var(--text); color: white; border: none; }
-    .btn-outline { background: transparent; color: var(--text); border: 1px solid var(--border); }
-    .avatar {
-      width: 80px; height: 80px; border-radius: 50%;
-      background: var(--accent-bg); color: var(--accent-text);
-      font-size: 24px; font-weight: 600;
-      display: flex; align-items: center; justify-content: center;
-      flex-shrink: 0;
-    }
+🚀
+En constante aprendizaje
+Certificado por TripleTen en Análisis de Datos. Siempre explorando nuevas herramientas y técnicas en Data Analytics y Business Intelligence.
 
-    /* SECTIONS */
-    section { padding: 48px 0; }
-    section + section { border-top: 0.5px solid var(--border); }
-    .section-label {
-      font-size: 11px; font-weight: 500; text-transform: uppercase;
-      letter-spacing: 0.09em; color: var(--muted); margin-bottom: 24px;
-    }
+Stack
+Herramientas y tecnologías
+🐍
+Python
+Pandas, Matplotlib, Seaborn
 
-    /* PROJECTS */
-    .projects-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-      gap: 16px;
-    }
-    .project-card {
-      background: var(--bg);
-      border: 0.5px solid var(--border);
-      border-radius: 12px;
-      padding: 20px;
-      transition: box-shadow 0.2s;
-    }
-    .project-card:hover { box-shadow: 0 4px 16px rgba(0,0,0,0.07); }
-    .project-icon {
-      width: 36px; height: 36px; border-radius: 8px;
-      display: flex; align-items: center; justify-content: center;
-      font-size: 18px; margin-bottom: 12px;
-    }
-    .icon-purple { background: #EEEDFE; }
-    .icon-teal   { background: #E1F5EE; }
-    .icon-amber  { background: #FAEEDA; }
-    .icon-coral  { background: #FAECE7; }
-    .icon-blue   { background: #E6F1FB; }
-    .project-card h3 { font-size: 14px; font-weight: 600; margin-bottom: 6px; }
-    .project-card p  { font-size: 13px; color: var(--muted); line-height: 1.55; margin-bottom: 14px; }
-    .tags { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 14px; }
-    .tag {
-      font-size: 11px; background: var(--bg2);
-      border: 0.5px solid var(--border);
-      padding: 3px 9px; border-radius: 20px; color: var(--muted);
-    }
-    .project-link {
-      font-size: 12px; color: var(--accent); text-decoration: none; font-weight: 500;
-    }
-    .project-link:hover { text-decoration: underline; }
+🗄️
+SQL
+Consultas, análisis, bases de datos
 
-    /* SKILLS */
-    .skills-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-      gap: 12px;
-    }
-    .skill-item {
-      background: var(--bg);
-      border: 0.5px solid var(--border);
-      border-radius: 10px;
-      padding: 14px 16px;
-      display: flex; align-items: center; gap: 12px;
-    }
-    .skill-dot {
-      width: 8px; height: 8px; border-radius: 50%;
-      flex-shrink: 0;
-    }
-    .dot-purple { background: #534AB7; }
-    .dot-teal   { background: #0F6E56; }
-    .dot-green  { background: #3B6D11; }
-    .dot-amber  { background: #854F0B; }
-    .skill-item span { font-size: 13px; font-weight: 500; }
+📑
+Excel
+Tablas dinámicas, fórmulas avanzadas
 
-    /* ABOUT */
-    .about-box {
-      background: var(--bg);
-      border: 0.5px solid var(--border);
-      border-radius: 12px;
-      padding: 24px 28px;
-    }
-    .about-box p { font-size: 14px; color: var(--muted); line-height: 1.75; margin-bottom: 16px; }
-    .about-box p:last-child { margin-bottom: 0; }
-    .cert-badge {
-      display: inline-flex; align-items: center; gap: 6px;
-      background: var(--accent-bg); color: var(--accent-text);
-      font-size: 12px; font-weight: 500;
-      padding: 5px 12px; border-radius: 6px;
-    }
+📊
+Power BI
+Dashboards, DAX, reportes
 
-    /* CONTACT */
-    .contact-links { display: flex; gap: 12px; flex-wrap: wrap; }
-    .contact-link {
-      display: flex; align-items: center; gap: 8px;
-      font-size: 13px; color: var(--muted);
-      border: 0.5px solid var(--border);
-      border-radius: 8px; padding: 10px 16px;
-      text-decoration: none; background: var(--bg);
-      transition: border-color 0.2s, color 0.2s;
-    }
-    .contact-link:hover { border-color: var(--accent); color: var(--accent); }
+🔬
+EDA
+Análisis exploratorio de datos
 
-    /* FOOTER */
-    footer {
-      border-top: 0.5px solid var(--border);
-      padding: 24px 0;
-      text-align: center;
-      font-size: 12px;
-      color: var(--muted);
-    }
+⚙️
+Git / GitHub
+Control de versiones
 
-    @media (max-width: 600px) {
-      .hero-inner { flex-direction: column-reverse; }
-      .hero h1 { font-size: 24px; }
-      .nav-links { gap: 14px; }
-    }
-  </style>
-</head>
-<body>
+Portafolio
+Proyectos destacados
+📊
+SQL
+Análisis de ventas con SQL
+Consultas avanzadas sobre una base de datos de ventas para identificar tendencias, productos top y comportamiento de clientes por segmento.
 
-  <nav>
-    <div class="nav-inner">
-      <a href="#" class="nav-logo">Diego Franco</a>
-      <ul class="nav-links">
-        <li><a href="#proyectos">Proyectos</a></li>
-        <li><a href="#habilidades">Habilidades</a></li>
-        <li><a href="#contacto">Contacto</a></li>
-      </ul>
-    </div>
-  </nav>
+SQL
+EDA
+GitHub →
+🐍
+Python
+Limpieza y EDA con Python
+Pipeline de limpieza de datos con Pandas: manejo de valores nulos, duplicados, normalización y análisis exploratorio con visualizaciones.
 
-  <div class="hero">
-    <div class="hero-inner">
-      <div>
-        <span class="badge">🎓 Certificado Tripleten · Analista de Datos</span>
-        <h1>Hola, soy<br><span>Diego Franco</span> 👋</h1>
-        <p>
-          Analista de datos y Contador Público. Transformo datos en información
-          valiosa para la toma de decisiones usando SQL, Python, Excel y Power BI.
-          En constante aprendizaje en Data Analytics y Business Intelligence.
-        </p>
-        <div class="hero-btns">
-          <a href="#proyectos" class="btn btn-dark">Ver proyectos</a>
-          <a href="#contacto" class="btn btn-outline">Contactarme</a>
-        </div>
-      </div>
-      <div class="avatar">DF</div>
-    </div>
-  </div>
+Python
+Pandas
+Seaborn
+GitHub →
+📈
+Power BI
+Dashboard de KPIs en Power BI
+Dashboard interactivo con métricas clave de negocio, filtros dinámicos y visualizaciones para apoyar la toma de decisiones gerenciales.
 
-  <main>
+Power BI
+DAX
+GitHub →
+📑
+Excel
+Modelo de análisis en Excel
+Modelo financiero con tablas dinámicas, fórmulas avanzadas (VLOOKUP, INDEX-MATCH) y gráficos para reportes automatizados de gestión.
 
-    <!-- PROYECTOS -->
-    <section id="proyectos">
-      <div class="container">
-        <div class="section-label">Proyectos</div>
-        <div class="projects-grid">
-
-          <div class="project-card">
-            <div class="project-icon icon-purple">📊</div>
-            <h3>Análisis de ventas con SQL</h3>
-            <p>
-              Consultas y análisis de una base de datos de ventas para identificar
-              tendencias, productos top y comportamiento de clientes.
-            </p>
-            <div class="tags">
-              <span class="tag">SQL</span>
-              <span class="tag">Análisis exploratorio</span>
-            </div>
-            <a href="https://github.com/diegofranco22df-alt" class="project-link">Ver en GitHub →</a>
-          </div>
-
-          <div class="project-card">
-            <div class="project-icon icon-teal">🐍</div>
-            <h3>Limpieza de datos con Python</h3>
-            <p>
-              Pipeline de limpieza y transformación de datos usando Pandas: valores
-              nulos, duplicados, normalización y análisis exploratorio.
-            </p>
-            <div class="tags">
-              <span class="tag">Python</span>
-              <span class="tag">Pandas</span>
-              <span class="tag">EDA</span>
-            </div>
-            <a href="https://github.com/diegofranco22df-alt" class="project-link">Ver en GitHub →</a>
-          </div>
-
-          <div class="project-card">
-            <div class="project-icon icon-amber">📈</div>
-            <h3>Dashboard en Power BI</h3>
-            <p>
-              Dashboard interactivo con métricas clave de negocio, filtros dinámicos
-              y visualizaciones para apoyar la toma de decisiones.
-            </p>
-            <div class="tags">
-              <span class="tag">Power BI</span>
-              <span class="tag">DAX</span>
-              <span class="tag">Visualización</span>
-            </div>
-            <a href="https://github.com/diegofranco22df-alt" class="project-link">Ver en GitHub →</a>
-          </div>
-
-          <div class="project-card">
-            <div class="project-icon icon-blue">📑</div>
-            <h3>Automatización en Excel</h3>
-            <p>
-              Modelo de análisis financiero con tablas dinámicas, fórmulas avanzadas
-              y visualizaciones para reportes automatizados.
-            </p>
-            <div class="tags">
-              <span class="tag">Excel</span>
-              <span class="tag">Tablas dinámicas</span>
-            </div>
-            <a href="https://github.com/diegofranco22df-alt" class="project-link">Ver en GitHub →</a>
-          </div>
-
-        </div>
-      </div>
-    </section>
-
-    <!-- HABILIDADES -->
-    <section id="habilidades">
-      <div class="container">
-        <div class="section-label">Habilidades</div>
-        <div class="skills-grid">
-          <div class="skill-item"><span class="skill-dot dot-purple"></span><span>Python</span></div>
-          <div class="skill-item"><span class="skill-dot dot-teal"></span><span>SQL</span></div>
-          <div class="skill-item"><span class="skill-dot dot-green"></span><span>Excel</span></div>
-          <div class="skill-item"><span class="skill-dot dot-amber"></span><span>Power BI</span></div>
-          <div class="skill-item"><span class="skill-dot dot-purple"></span><span>Pandas</span></div>
-          <div class="skill-item"><span class="skill-dot dot-teal"></span><span>Matplotlib / Seaborn</span></div>
-          <div class="skill-item"><span class="skill-dot dot-green"></span><span>Análisis exploratorio (EDA)</span></div>
-          <div class="skill-item"><span class="skill-dot dot-amber"></span><span>Git / GitHub</span></div>
-        </div>
-      </div>
-    </section>
-
-    <!-- SOBRE MÍ -->
-    <section id="sobre-mi">
-      <div class="container">
-        <div class="section-label">Sobre mí</div>
-        <div class="about-box">
-          <p>
-            Soy Contador Público con formación especializada en análisis de datos.
-            Me apasiona transformar conjuntos de datos complejos en información clara
-            y accionable que apoye la toma de decisiones estratégicas en las organizaciones.
-          </p>
-          <p>
-            Mi objetivo es desarrollar soluciones basadas en datos que permitan optimizar
-            procesos, identificar oportunidades y generar valor real para los equipos y
-            empresas con las que colaboro.
-          </p>
-          <span class="cert-badge">🎓 Certificado en Análisis de Datos · TripleTen</span>
-        </div>
-      </div>
-    </section>
-
-    <!-- CONTACTO -->
-    <section id="contacto">
-      <div class="container">
-        <div class="section-label">Contacto</div>
-        <div class="contact-links">
-          <a href="https://github.com/diegofranco22df-alt" class="contact-link" target="_blank">
-            <!-- GitHub icon -->
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-              <path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/>
-            </svg>
-            GitHub
-          </a>
-          <a href="https://www.linkedin.com/in/diego-franco-t/" class="contact-link" target="_blank">
-            <!-- LinkedIn icon -->
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-              <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
-            </svg>
-            LinkedIn
-          </a>
-          <a href="mailto:diegofranco22@hotmail.com" class="contact-link">
-            <!-- Mail icon -->
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
-              <polyline points="22,6 12,13 2,6"/>
-            </svg>
-            diegofranco22@hotmail.com
-          </a>
-        </div>
-      </div>
-    </section>
-
-  </main>
-
-  <footer>
-    <div class="container">
-      Diego Franco · Analista de Datos · 2025
-    </div>
-  </footer>
-
-</body>
-</html>
+Excel
+Tablas dinámicas
+GitHub →
+Contacto
+Trabajemos juntos
+GitHub
+diegofranco22df-alt
+LinkedIn
+diego-franco-t
+Email
+diegofranco22@hotmail.com
+Portafolio completo
+Ver todos mis repositorios
+Hecho con 💜 por Diego Franco · Analista de Datos · 2025
